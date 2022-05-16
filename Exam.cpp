@@ -1,73 +1,73 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
 	/*
-	for(int i=0 ;i<10;i++)
-	{	switch(i>5)
-		{
-			case 0:i+=5;break;
-			case 1:i+=2;break;
-		}
-		printf("%d\n",i);
-	}
-	*/
-	
-	/*
-	int i,sum=1;
-	for(i=0;i<=6;i=i+1);
-		sum=sum+i;
-		printf("%d",sum);
-	*/
-	/*
-	int x=2;
-	int y=1;
-	if((x==3)&&(x++)) x++;
-	else if ((y==1)||(y--)) y--;
-	else ++x;
-	y++;
-	
-	printf("%d %d",x,y)	;
-	*/
-	/*
-	int a=285;
-	double y=27.3789;
-	printf("%6.2f",y);
-	printf("%4d",a);
-	*/
-	
-	/*
-	for(int i=0;i<20;i++)
+	int a[4]={10,12,14};
+	a[1]=20;
+	int i=3;
+	while(i>=0)
 	{
-		switch(i)
-		{
-			case 0:i+=5;
-			case 1:i+=2;
-			case 5:i+=5;
-			default:i+=4;
-		}
-		printf("%d",i);
+		printf("%d\t",a[i]);
+		i--;
 	}
 	*/
 	
 	/*
-	if(4<2)
-		printf("+++");
-		printf("***");			
+	int i,j,c;
+	for(i=1;i<4;i++)
+	{
+		for(j=1;j<=2*i-1;j++){
+			c=2*i-1;
+			printf("%d",c);
+		}
+	}
+	printf("\n");
 	*/
 	
 	/*
-	int a=2,b=2,c=0,d=2,m;
-	m= a++&&b++&&c++||d++;
-	printf("%d %d %d %d %d",a,b,c,d,m);
+	int i=-5;
+	while (i<=5)
+	{
+		if(i>=0)
+			break;
+		else
+		{
+			i++;
+			continue;
+			
+		}
+		printf("quiz2");
+	}
 	*/
 	
-	int a=-5;
-	int b=10;
-	if(a>0)
-		if(b>0)
-		printf("+0");
+	/*
+	int i=0;
+	for(printf("one\n");i<3 && printf("- ");i++);
+	{
+		printf("hi\n");
+	}
+	printf("by");
+	*/
 	
-	else
-	printf("#");
-	printf("bitti");	
+	int d;
+	i=n;
+	while(n!=0)
+	{
+		d=n%i;
+		printf("%d\t",d);
+		n=n/i;
+		i++;
+		
+	};
+	
+		int d;
+	i=n;
+	while(n!=0)
+	{
+		d=n%i;
+		printf("%d\t",d);
+		n=n/i;
+		i++;
+		
+	};
 }
