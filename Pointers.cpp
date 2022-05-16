@@ -1,57 +1,32 @@
 #include <stdio.h>
-void minMax(int a[],int len,int *min,int *max);
-
 int main()
 {
 	/*
-	int x=5;
-	int *ptr;
-	ptr = &x;
-	printf("%d",*ptr);
+	int a;
+	float b;
+	char c;
+	
+	int *p1=&a;
+	float *p2=&b;
+	char *p3=&c;
+	
+	printf("address of a=%p\n",&a); // &a ve p1 possible
+	printf("address of b=%p\n",p2);
+	printf("address of c=%p",p3);
 	*/
 	
-	/*
-	int x=10;
-	int *r=&x;
-	x=4;
-	*r=3;
-	printf("%d",&x);
-	*/
+	int a,b,sum=0;
+	int *p,*q,*s;
 	
-	/*
-	int x=5;
-	int *p;
-	printf("%d",*p);
-	*/
+	printf("Enter two number: ");
+	scanf("%d %d",&a,&b);
 	
-	/*
-	int i=1;
-	int *p=&i;
-	q=p;
-	*p=5;
-	printf("%d",*p);
-	*/
-	
-	int a[]={2,42,4,5,654,4,56,45,64,65,4,654,654,5};
-	int min,max;
-	int len=sizeof(a)/sizeof(a[0]);
-	minMax(a,len,&min,&max);
-	printf("min:%d and max:%d",min,max);
-	
-}
-
-void minMax(int a[],int len,int *min,int *max)
-{
-	*min=a[0];
-	*max=a[0];
-	
-	int i;
-	for(i=1;i<len;i++)
-	{
-		if(a[i]>*max)
-			*max=a[i];
-		if(a[i]<*min)
-			*min=a[i];	
-			
-	}
+	p=&a;
+	q=&b;
+	sum=*p + *q;
+	//printf("sum is =%d",sum);
+	printf("address of a=%p and value=%d\n",p,a);
+	printf("address of b=%p and value=%d\n",q,b);
+	//printf("sum is =%d",sum);
+	printf("address of sum=%p and value=%d",s,sum);
 }
